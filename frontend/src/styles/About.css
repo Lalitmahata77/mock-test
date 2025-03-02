@@ -1,0 +1,72 @@
+/* About.css */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif; /* Or any font you prefer */
+    color: #333;
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.section-title {
+    text-align: center;
+    color: #2c3e50; /* Or your preferred color */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.content-section {
+    width: 80%; /* Adjust as needed */
+    max-width: 1000px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+.content-section:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Darker shadow */
+}
+
+.subsection-title {
+    color: #2980b9; /* Or your preferred color */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db; /* Or a color that matches */
+    padding-bottom: 0.5rem;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-member {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background: #fff;
+    border-left: 4px solid #3498db; /* Or a color that matches */
+    font-weight: 500;
+}
+
+.feature-list {
+    padding-left: 1.5rem;
+}
+
+.feature-item {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.intro-text,
+.vision-text {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #444;
+}

@@ -1,0 +1,67 @@
+
+.progress-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 650px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #3c6996, #34495e); /* Darker background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    color: #ecf0f1;
+    padding: 30px;
+  }
+  
+  .progress-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #a8bd33; /* Yellow title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .recharts-cartesian-grid-horizontal line,
+  .recharts-cartesian-grid-vertical line {
+    stroke: #34495e; /* Darker grid lines */
+    stroke-opacity: 0.5;
+  }
+  
+  .recharts-xAxis text,
+  .recharts-yAxis text,
+  .recharts-tooltip-item-name,
+  .recharts-tooltip-item-value {
+    fill: #ecf0f1; /* Light text for chart elements */
+  }
+  
+  .recharts-tooltip-wrapper {
+    background-color: rgba(44, 62, 80, 0.9); /* Dark tooltip background */
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .recharts-line-dot {
+    fill: #3498db; /* Blue dots */
+    stroke: #3498db;
+  }
+  
+  .recharts-line-curve {
+    stroke: #3498db; /* Blue line */
+    stroke-width: 3;
+  }
+  
+  .recharts-line-dot:hover {
+    r: 8; /* Larger dot on hover */
+    fill: #2980b9;
+  }
+  
+  /* Add a subtle animation to the chart line */
+  .recharts-line-curve {
+    transition: stroke-dashoffset 0.5s ease;
+    stroke-dasharray: 5, 5;
+    stroke-dashoffset: 5;
+  }
+  
+  .recharts-line-curve:hover {
+    stroke-dashoffset: 0;
+  }

@@ -1,0 +1,92 @@
+/* Navbar.css */
+.navbar {
+    background-color: #f0f0f0; /* Example navbar background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    width: 100%; /* Make content take full width */
+    max-width: 1350px; /* Set a maximum width for the navbar content */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    /* Style your logo/brand link */
+    margin-right: auto; /* Push links to the right */
+    text-decoration: none;
+    font-weight: 800;
+    color: #cc1845;
+    font-size: 40px;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px; /* Add some padding to the links */
+    border-radius: 5px; /* Add rounded corners to the links */
+    transition: background-color 0.3s ease; /* Add a transition for hover effect */
+}
+
+.navbar-links a:hover {
+    background-color: #c99595; /* Light gray background on hover */
+}
+
+.navbar-links a.active {
+    color: rgb(206, 145, 145); /* Active link color */
+}
+
+.login-signup-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push to the right */
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.login-button,
+.signup-button {
+    padding: 7px 14px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underlines from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+.login-button {
+    background-color: #2980b9;;
+    color: rgb(255, 255, 255);
+}
+
+.login-button:hover {
+    background-color: #61c5cc;
+}
+
+.signup-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.signup-button:hover {
+    background-color: #7bc060;
+}

@@ -1,0 +1,125 @@
+/* Quiz.css */
+.assessment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    min-height: 400px;
+    position: fixed; /* Always fullscreen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: white;
+    overflow: auto;
+    justify-content: center; /* Center vertically */
+}
+
+
+.assessment-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.assessment-container button {
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.assessment-container button:hover {
+    opacity: 0.3;
+}
+
+.assessment-container .next-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.assessment-container .prev-button {
+    background-color: #008CBA;
+    color: white;
+}
+
+.assessment-container .submit-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.assessment-container p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.assessment-container .question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #333;
+}
+
+.assessment-container .options label {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.assessment-container .options input[type="radio"] {
+    margin-right: 15px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    vertical-align: middle;
+    cursor: pointer;
+    accent-color: #2196F3;
+}
+
+.assessment-container .options input[type="radio"]:checked {
+    border-color: #d0d8ab;
+    background-color: #07253d;
+}
+
+.assessment-container .options input[type="radio"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+.assessment-container .results {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.assessment-container .results p {
+    margin-bottom: 10px;
+}
+
+.assessment-container .timer {
+    font-weight: bold;
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.assessment-container .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px;
+}
+
+.assessment-container .navigation button {
+    margin: 10 20px;
+}

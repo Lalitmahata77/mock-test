@@ -1,0 +1,91 @@
+
+.leaderboard-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #1c2833, #283747); /* Dark gradient background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    color: #ecf0f1; /* Light text color */
+  }
+  
+  .leaderboard-container h2 {
+    text-align: center;
+    padding: 30px 0;
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #3498db; /* Blue title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .leaderboard-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leaderboard-container th,
+  .leaderboard-container td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #34495e; /* Darker border */
+  }
+  
+  .leaderboard-container th {
+    background-color: #2c3e50; /* Slightly darker header */
+    font-weight: 600;
+  }
+  
+  .leaderboard-container tbody tr:nth-child(even) {
+    background-color: rgba(44, 62, 80, 0.5); /* Subtle row highlighting */
+  }
+  
+  .leaderboard-container tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.2); /* Hover effect */
+    transition: background-color 0.3s ease;
+  }
+  
+  .leaderboard-container td:first-child {
+    width: 10%; /* Rank column width */
+    text-align: center;
+  }
+  
+  .leaderboard-container td:nth-child(2) {
+    width: 60%; /* Username column width */
+  }
+  
+  .leaderboard-container td:last-child {
+    width: 30%; /* Score column width */
+    text-align: right;
+    font-weight: bold;
+    color: #f39c12; /* Orange for score */
+  }
+  
+  /* Add a subtle glow effect to the rank */
+  .leaderboard-container td:first-child {
+    position: relative;
+  }
+  
+  .leaderboard-container td:first-child::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, rgba(52, 152, 219, 0.5), transparent);
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  /* Add a subtle animation to the table rows */
+  .leaderboard-container tbody tr {
+    transition: transform 0.2s ease;
+  }
+  
+  .leaderboard-container tbody tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }

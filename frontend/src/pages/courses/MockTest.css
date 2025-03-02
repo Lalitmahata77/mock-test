@@ -1,0 +1,28 @@
+.timer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc3545; /* Red for urgency */
+    background: #ffeeba;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .mock-test {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .review-item {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .review-item p {
+    margin: 5px 0;
+  }
