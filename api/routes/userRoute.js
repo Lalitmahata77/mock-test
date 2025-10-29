@@ -4,7 +4,7 @@ import { authenticate, authorizeAdmin } from "../middleware/authMiddleware.js"
 const router = express.Router()
 
 router.route("/register").post(createUser)
-router.route("/").get(authenticate, authorizeAdmin,getAllUsers)
+router.route("/").get(authenticate,getAllUsers)
 router.route("/login").post(login)
 router.route("/logout").post(authenticate,logout)
 router.route("/profile").get(authenticate,getUserDetails)

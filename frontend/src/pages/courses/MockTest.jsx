@@ -152,7 +152,7 @@ const MockTest = () => {
   const [saveResults] = useSaveResultsMutation();
   const [startTime] = useState(Date.now());
 
-  const { data: users, refetch, isLoading: isUsersLoading, error: usersError } = useGetAllUsersQuery();
+  const { data: users, isLoading: isUsersLoading, error: usersError } = useGetAllUsersQuery();
 
   // Timer Countdown
   useEffect(() => {
